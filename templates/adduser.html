@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block body %}
+
+
+<div class="container">  
+  <form id="adduser" action="/adduser" method="post">
+  {% csrf_token %}
+    <h3>Central Library</h3>
+    <h4>Add User Detail</h4>
+    <fieldset>
+      <input placeholder="username" type="text" tabindex="1" id="username" name="username" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="email" type="text" tabindex="2" id="email" name="email" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="password" type="text" tabindex="3" id="password" name="password" required>
+    </fieldset>
+    
+    <fieldset>
+      <button class="btn btn-primary"  type="submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+    
+  </form>
+</div>
+
+{% endblock body %}
