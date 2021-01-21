@@ -8,13 +8,15 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <title>Tech Blog</title>
+    <title>Central Library</title>
   </head>
   
     <style>
     html,
 body {
   height: 100%;
+    background-image: url('https://ae01.alicdn.com/kf/HTB18mqqiCcqBKNjSZFgq6x_kXXaZ.jpg_q50.jpg');
+
 }
 
 body {
@@ -79,7 +81,8 @@ body {
   <form method="POST" action="/login">
      {% csrf_token %}
     {% comment %} <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> {% endcomment %}
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    <h1 class="h3 mb-3 fw-normal">Central Library</h1>
+    <h2 class="h3 mb-3 fw-normal">Please sign in</h2>
     <label for="inputEmail" class="visually-hidden">Username</label>
     <input type="text" id="inputEmail" name="username" class="form-control" placeholder="Username" required autofocus>
     <label for="inputPassword" class="visually-hidden">Password</label>
